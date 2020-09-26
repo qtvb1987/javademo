@@ -13,6 +13,7 @@ public class BufferedReaderDemo01 {
         try {
             BufferedReader br=new BufferedReader(new FileReader("e://filew02.txt"));
             String str;
+            //read 方法读取参照字符流 readline是缓冲流特有方法
             while ((str=br.readLine())!=null){
                 System.out.println(str);
             }
